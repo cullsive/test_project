@@ -1,1 +1,1 @@
-print("hello cullsive vh,v"); 
+print("hello cullsive vh,v")
