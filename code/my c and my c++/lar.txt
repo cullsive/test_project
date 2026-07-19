@@ -1,0 +1,28 @@
+
+-----------------------------------------------
+
+PERSONNE 1
+
+Name lora
+Age 10ans
+Ville : `å÷mJ
+Adress : (û?¢Å
+Numero : @ú?¢Å
+Travaille : @ú?¢Å
+Sacial [7;31ml'utilisateur est mineur[0m
+
+-----------------------------------------------
+
+-----------------------------------------------
+
+PERSONNE 2
+
+Name lara
+Age 18ans
+Ville : `å÷mJ
+Adress : (û?¢Å
+Numero : @ú?¢Å
+Travaille : @ú?¢Å
+Sacial [7;32ml'utilisateur est adult[0m
+
+-----------------------------------------------

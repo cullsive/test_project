@@ -1,0 +1,232 @@
+
+if (strstr(email, "gmail") != NULL);
+
+
+complilation - rapide>>>
+
+**** gcc -std=c23 -Wall -Wextra -O2 -pipe moncode.c -o moncode.exe (ou) pacman -Syu ****
+
+cd "C:\Users\culls\OneDrive\Desktop\cullsive\code\my c and my c++"
+
+
+gcc int.c -o int.exe
+
+.\int.exe
+
+Clear-Host; if ($?) { gcc int.c -o int }; if ($?) { .\int }
+
+///////////////////////////////////////////////////////////////////////
+"c": "clear && cd \"C:\\Users\\culls\\OneDrive\\Desktop\\cull\\code\\c and c++\" && gcc $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt", 
+/////////////////////////////////////////////////////////////////////
+"c": "clear && cd \"C:\\Users\\culls\\OneDrive\\Desktop\\cullsive\\code\\my c and my c++\" && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" && .\\\"$fileNameWithoutExt.exe\""
+/////////////////////////////////////////////////////////////////////////
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+"clear && gcc $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+pas touche mon gar>>> ///////////////////////////////////////
+
+
+do {
+    printf("Entrez votre nom : ");
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';
+
+    if (strlen(name) == 0) {
+        printf("⚠️ Vous devez saisir un nom.\n");
+    }
+} while (strlen(name) == 0);
+
+
+
+
+
+
+
+
+
+
+
+
+char name [100]= ""; 
+char genre [50]= ""; 
+int age = 21;  
+char situation [100]="";
+char adress [100]=""; 
+char codepostal [30] =""; 
+char numero [50]= ""; 
+float revenus = 0.0f; 
+double pret  = 0.0;
+ float poussentage = 0.07; 
+char analise [100]= "nous allons analise votre dossie et vous imforme de notre decision"; 
+ char decision [20]= "accepter";
+ char decision2 [20]= "refuse";
+char devise = '$'; 
+float total = 0.0f; 
+
+
+// presentation //////////////////////////////////////////
+
+
+printf("bonjours bienvenu a vous a la banque N.W.C\n"); 
+
+
+// name ///////////////////////////////////////
+
+do{
+  printf("\nentre votre nom et prenom (cela serai verifie ) : "); 
+  fgets(name,sizeof(name), stdin); 
+ name[strcspn(name, "\n")]= '\0'; 
+
+
+if(strlen(name) == 0){
+  printf("\ncela est obligatoir :: %s!!\n ", decision2); 
+}else{
+  printf("\n%s!\n",decision); 
+}
+
+}while(strlen(name) == 0); 
+
+// genre //////////////////////////////
+
+do{
+  printf("\nentre votre genre vous etre monsieure ou madame (cela serai verifie ) : "); 
+ fgets(genre,sizeof(genre),stdin); 
+ genre[strcspn(genre,"\n")]= '\0'; 
+
+if(strlen(genre) == 0){
+  printf("\ncela est obligatoire :: %s!!\n",decision2); 
+}else{
+  printf("\n%s!\n",decision); 
+}
+
+}while(strlen(genre) == 0); 
+
+
+
+// age /////////////////////////////////////////
+
+printf("\nentre votre age (cela serai verifie ) : ");
+if(scanf("%d",&age) != 1){
+printf("erreur 404"); 
+return 1; 
+}
+if(age >= 21){
+printf("\n%s!\n",decision); 
+
+}else{
+  printf("\nnon vous ne pouvez pas %s :: %s!!\n",genre,decision2); 
+  return 0; 
+}
+
+while (getchar() != '\n' && getchar() != EOF);
+
+int ch;
+while ((ch = getchar()) != '\n' && ch != EOF);
+
+// situation///////////////////////////////////
+
+
+do{
+printf("\nentre votre situation profesionnel (cela serai verifie ) : "); 
+fgets(situation ,sizeof(situation),stdin); 
+situation[strcspn(situation,"\n")]= '\0';
+
+if(strlen(situation) == 0){
+  printf("\ncela est obligatoire %s :: %s!!\n",genre,decision2); 
+}
+
+}while(strlen(situation) == 0);
+
+
+// adress/////////////////////////////////////////////////
+
+do{
+  printf("\nentre votre adress (cela serai verifie ) : "); 
+  fgets(adress,sizeof(adress) , stdin); 
+  adress[strcspn(adress,"\n")]= '\0';
+
+  if(strlen(adress) == 0){
+    printf("\ncela est obligatoire %s :: %s!!\n",genre,decision2); 
+  }else{
+    printf("\n%s!\n",decision); 
+   
+  }
+
+
+}while(strlen(adress) == 0);
+
+
+// codepostal///////////////////////////////////////////
+
+
+do{
+printf("\nentre votre code postal (cela serai verifie) :");
+fgets(codepostal,sizeof(codepostal),stdin); 
+codepostal[strcspn(codepostal, "\n")]= '\0'; 
+
+if(strlen(codepostal) == 0){
+  printf("\ncela est obligatoir %s :: %s!!\n",genre,decision2); 
+}else{
+  printf("\n%s!\n",decision); 
+}
+
+}while(strlen(codepostal) == 0); 
+
+
+
+
+// numero /////////////////////////////////////////////////
+
+
+do{
+  printf("\nentre votre numero de telephone (cela serai verifie) : "); 
+  fgets(numero,sizeof(numero), stdin); 
+  numero[strcspn(numero,"\n")]='\0'; 
+
+if(strlen(numero) == 0){
+  printf("\ncela est obligatoir %s :: %s!!\n",genre,decision2); 
+}else{
+  printf("\n%s!\n",decision); 
+}
+
+}while(strlen(numero)== 0); 
+
+
+//revenu /////////////////////////////////////////////////////////
+
+printf("\nentre votre revenus (cele serai verifie) : ");
+if(scanf("%f", &revenus) != 1){
+  printf("erreur 404"); 
+  return 1; 
+}
+if(revenus >= 5000){
+  printf("\n%s!\n",decision); 
+}else{
+  printf("\nrevenus faible %s :: %s!! \n",genre,decision2); 
+}
+
+// pret ///////////////////////////////////////////////////
+
+printf("\nentre la somme a prete : "); 
+if(scanf("%lf",&pret) != 1){
+  printf("erreur 404"); 
+ return 1; 
+}
+
+if(pret >= 4500){
+  printf("\nle pret minimume est de %lf %s\n",pret,genre); 
+}else{
+  printf("\n%s\n",analise); 
+}
+
+
+
+total =pret * poussentage;    
+
+
+printf("\npour un pret de %c%.2lf vous alle devois rembourse %c%.2f de plus\n",devise,pret,devise,total);
+printf("\n nous vous contacterons bientot %s %s pour discuter davantager\n",genre,name); 
+printf("\n et aussi pour recupere plus de document aants le versement \n");
+

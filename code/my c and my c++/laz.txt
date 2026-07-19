@@ -1,0 +1,8 @@
+-----------------------------------
+
+UTILISATEUR 1
+name : lora
+age : 110
+social : [7;32ml'utilisateur est adult[0m
+
+-----------------------------------

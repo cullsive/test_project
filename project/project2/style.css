@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.monde{
+    background-color: rgba(230, 230, 230);
+    width: 1400px;
+    height: 850px;
+   transform: translate(-50% , -50%);
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   border-radius: 25px;
+   box-shadow: 10px 10px 20px #cfcfcf, 
+   -10px -10px 20px #a1a1a1;
+}   
+svg{
+    fill: rgb(94, 94, 94);
+}
+h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+     padding: 10px 30px;
+   height: 120px;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+    list-style:none;
+    align-items: center;
+}
+
+
+ul a{
+text-decoration: none;
+color: black;
+}
+.btn-class{
+    display: flex;
+    gap: 0.7rem;
+}
+.btn-class a {
+
+    background: rgba(255, 255, 255, 0.411);
+    border-radius: 10px;
+    border: 4px double white;
+    cursor: pointer;
+}
+.btn-class button {
+
+width: 120px;
+font-size: 13.5px;
+    font-weight: 550;
+    border-radius: 7px;
+    border: 2.5px solid #ffffff;
+    background: rgb(230, 230, 230) ;
+    box-shadow: -10px 10px 20px #ebebeb ,
+    -10px 10px 20px #f1f1f1;
+    cursor: pointer;
+}
+ul li a:hover{
+  opacity: 0.5;
+}
+.span1{
+   font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 190px;
+  position: relative;
+  left: 24%;
+  top: 250px;
+}
+.span2{
+   font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 190px;
+  position: relative;
+  left: 25%;
+  top: 340px;
+}
+.span3{
+   font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 190px;
+  position: relative;
+  left: 52.8%;
+  top: 340px;
+}
+.span3{
+   font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 190px;
+  position: relative;
+  left: 52.8%;
+  top: 340px;
+}
+.span4{
+   font-family: "Staatliches", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 65px;
+  position: relative;
+  left: 53.9%;
+  top: 362px;
+}
+
+img{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 59.8%;
+    left: 50%;
+    width: 550px;
+}
+.element{
+    transform: translateY(260px);
+position: relative;
+left: 33px;
+}
+#me{
+  position: relative;
+top: 66px;
+left: -290px;
+ background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+ color: white;
+ width: 135px;
+ height: 35px;
+ border-radius: 7px;
+ cursor: pointer;
+}
+.element p{
+    transform: translateY(10px);
+}
+h3{
+    transform: translateY(10px);
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration:line-through; */
+    animation: cull 1s infinite;
+}
+@keyframes cull {
+    0%{
+        text-decoration: line-through;
+        opacity: 1;
+      
+    }
+    100%{
+text-decoration: none;
+opacity: 0.5;
+    }
+}
+.mouse{
+    width: 30px;
+    height: 30px;
+border: 2px solid rgba(0, 0, 0, 0.678);
+border-radius: 50%;
+position: absolute;
+transform:translate(-50%, -50%);
+top: 50%;
+left: 50%;
+
+}

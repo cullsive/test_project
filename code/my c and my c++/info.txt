@@ -1,0 +1,107 @@
+[etape suivent ]
+
+**************** {%p} == priorite !
+
+{*?*} = a apprendre bientot ;
+
+lire ET ECRIRE un fiche txt en c : ? ; 
+malloc et free en c : ?; 
+aprendre cree ma propre fonction int void avec mineur margeur un peux comme ma fonction char en void : ? ; 
+bien apprendre les enum : *?* ; 
+tableaux de char dans structure : *?* ; 
+****************
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ( fin 1 commence 2; );
+
+-----------------[%r]= revoire plus pour quoi ça reste bien; 
+les nombre aleatoire plus la fonction de malange avec void : ? ;
+un peux de tableaux en c int char folat : ? ; 
+---------------------------------------------------------------
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ( fin 2 commence 3; );
+
+
+...................[%]
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ( fin 3 commence 4; );
+
+
+##############################################################################################
+
++++++++++++++++[%+%]= revision  du jour a toujours complete; 
+
+completer = oui; 
+
+jeudi : oui ; (ne pas manque un jours); 
+
+###############################################################################################
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// ( fin 4 commence 5; );
+
+[%rp]= rapel du code; 
+
+important = v ; 
+
+non important = f ;
+
+// //rapel// //
+
+
+aprendre a lire des fiche : v ; 
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////// ( fin 5 commence 6; );
+
+
+
+&&[%t]= pas tres important pour le moment 123... du plus important au moin important; 
+
+
+\\\ rappeleration mode future 123... ///
+
+1- barre de progression en temps reel en c ; 
+
+2- 
+
+3- 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ( fin 6 commence 7; );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+NOTE DU JOURS ? = {
+
+
+tout est bon pour le moment 
+
+
+
+
+
+
+
+
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// (fin = final); 

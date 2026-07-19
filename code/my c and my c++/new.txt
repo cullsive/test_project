@@ -1,0 +1,158 @@
+int age [][3]={{1,2,3}, {4,5,6}}; 
+
+
+printf("entre le chifre : "); 
+scanf("%d",&age[0][1]); 
+
+
+age[0][0]=10; 
+
+for(int i = 0; i < 2; i++){
+for(int j = 0; j < 3; j++){
+
+printf("nb [%d][%d] : %d\n",i ,j , age[i][j]); 
+
+}
+
+
+printf("\n"); 
+}
+//////////////////////////////////////////////////////////////
+
+
+nombre aleatoire 
+
+srand(time(NULL)); 
+
+int nb = (rand() %(max - min + 1)) + min; 
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+replay 
+
+char rejouer;
+do {
+    // ton jeu ici
+
+    printf("\nVoulez-vous rejouer ? (o/n) : ");
+    scanf(" %c", &rejouer);
+} while (rejouer == 'o' || rejouer == 'O');
+
+///////////////////////////////////////////////////////////////////////
+
+melange for/
+
+int choix[3] = {nb, nb2, nb3};
+
+// Mélange simple
+for (int i = 0; i < 3; i++) {
+    int j = rand() % 3;
+    int temp = choix[i];
+    choix[i] = choix[j];
+    choix[j] = temp;
+}
+
+// Affiche les choix
+printf("Voici les trois nombres :\n");
+for (int i = 0; i < 3; i++) {
+    printf("→ %d  ", choix[i]);
+}
+printf("\n");
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+
+  // Mélange aléatoire
+    for (int i = 0; i < 3; i++) {
+        int j = rand() % 3;
+        int temp = choix[i];
+        choix[i] = choix[j];
+        choix[j] = temp;
+    }
+
+
+
+//melange complet ///
+
+void shuffle(int *array, int size) {
+    for (int i = size - 1; i > 0; i--) {
+        int j = rand() % (i + 1);
+        // échange array[i] et array[j]
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+int main() {
+    srand(time(NULL) + getpid());
+
+    int nb1 = (rand() % 90) + 10;  // entre 10 et 99
+    int nb2 = (rand() % 61) + 20;  // entre 20 et 80
+    int nb3 = (rand() % 50) + 50;  // entre 50 et 99
+
+    int numbers[3] = {nb1, nb2, nb3};
+
+    shuffle(numbers, 3);
+
+    printf("%d %d %d\n", numbers[0], numbers[1], numbers[2]);
+
+}
+
+
+
+    ///////////////////////////////////////////////////////////////////////
+
+
+
+         if (strcmp(rejouer, "oui") == 0 || strcmp(rejouer, "Oui") == 0) {
+        // Relance le programme lui-même
+        execl("./mon_programme", "./mon_programme", NULL);
+        // Remplace "mon_programme" par le nom de ton fichier exécutable
+    }
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+melange aleatoire avec if pour 6 nombre
+
+
+int r = rand() % 6;
+
+if (r == 0) {
+    printf("%d %d %d\n", nb1, nb2, nb3);
+} else if (r == 1) {
+    printf("%d %d %d\n", nb1, nb3, nb2);
+} else if (r == 2) {
+    printf("%d %d %d\n", nb2, nb1, nb3);
+} else if (r == 3) {
+    printf("%d %d %d\n", nb2, nb3, nb1);
+} else if (r == 4) {
+    printf("%d %d %d\n", nb3, nb1, nb2);
+} else {
+    printf("%d %d %d\n", nb3, nb2, nb1);
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+Je peux aussi t’apprendre à faire :
+- des barres de progression fluides
+- des spinners ( / - )
+- des effets “tape à la machine”
+- des transitions propres
+- des cadres dynamiques
+- des menus interactifs
+- des sous‑menus stylés
+- des logos ASCII personnalisés
+Tout ça en C, dans ton terminal.

@@ -1,0 +1,23 @@
+/////////void fonction int age///////////////
+
+
+void gtr(int *rt, char *mar, int timee){
+    printf("%s", mar);
+    scanf("%d", rt);
+
+    char *pos = (*rt >= timee) ? "vous etes adulte" : "vous etes mineur";
+    printf("%s\n", pos);
+}
+
+
+
+//////verssion 2////////
+
+
+void gtr(int *rt, char *mar){
+    printf("%s", mar);
+    scanf("%d", rt);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////

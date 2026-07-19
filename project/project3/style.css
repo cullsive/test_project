@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+background-image: repeating-linear-gradient(293deg, hsla(29,0%,74%,0.12) 0px,transparent 7px,hsla(29,0%,74%,0.12) 12px,transparent 19px,hsla(29,0%,74%,0.12) 24px,transparent 31px,hsla(29,0%,74%,0.12) 36px),repeating-linear-gradient(43deg, hsla(29,0%,74%,0.12) 0px,transparent 7px,hsla(29,0%,74%,0.12) 12px,transparent 19px,hsla(29,0%,74%,0.12) 24px,transparent 31px,hsla(29,0%,74%,0.12) 36px),repeating-linear-gradient(0deg, hsla(29,0%,74%,0.12) 0px,transparent 7px,hsla(29,0%,74%,0.12) 12px,transparent 19px,hsla(29,0%,74%,0.12) 24px,transparent 31px,hsla(29,0%,74%,0.12) 36px),linear-gradient(90deg, rgb(253,253,253),rgb(253,253,253));
+}
+/* .mouse{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px dashed black;
+    border-radius: 50%;
+pointer-events: none;
+}
+
+
+.monde{
+    width: 1400px;
+    height: 850px;
+    background: rgb(233, 233, 233);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:25px;
+    box-shadow: 15px 15px 30px rgb(192, 192, 192) , 
+    -15px -15px 30px rgb(190, 190, 190);
+ 
+}
+svg{
+    fill: rgb(255, 255, 255);
+   position: relative;
+  top: 3px; 
+   left:3px ;
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 10px 30px ;
+opacity: 0;
+transition: 0.8s ease-out;
+}
+h1{
+    cursor: pointer;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+position: fixed;
+left: 27%;
+}
+ul a{
+    text-decoration: none;
+    color: black;    
+}
+ul a:hover{
+    opacity: 0.5;
+}
+.btn{
+    display: flex;
+gap: 3rem;
+}
+.btn a{
+    width: 35px;
+    height: 35px;
+    background: rgba(151, 151, 151, 0.411);
+    border-radius: 7px;
+   border: 2px solid rgb(255, 255, 255);
+
+   
+}
+.btn button{
+    width: 120px;
+    border-radius: 7px;
+    border: 2px dashed rgb(48, 48, 48);
+    background: rgba(255, 255, 255, 0.555);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+img{
+    width: 570px;
+    position: absolute;
+    top: 58.2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.6s ;
+      scale: 0.5;
+}
+.text{
+     font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 30%;
+  font-size: 120px;
+}
+.span1{
+    position: relative;
+    left: 218px;
+   
+    transition: 0.8s ease;
+    /* transform: translateY(-200px); */
+/* }
+.span2{
+    position: relative;
+    left: 750px;
+    top: 300px;
+    transition: 0.8s ease;
+}
+.mat1{
+    width: 170px;
+    height: 50px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+     position: absolute;
+  left: 62%; 
+  top: 35%;
+  transition: 0.8s ease-in-out;
+  opacity: 0;
+}
+.mat2{
+    width: 170px;
+    height: 50px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    position: absolute;
+   transition: 0.8s ease-in-out;
+  top: 78%;
+  left: 23.5%;
+  opacity: 0;
+}
+.mat1 span{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    position: relative;
+    top: -13px;
+    left: 180px;
+
+}
+.mat2 span{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    position: relative;
+    top: -13px;
+    left: -75px;
+
+}
+.button-max{
+transform: translateY(600px);
+position: relative;
+left: 50px;
+top: 20px;
+opacity: 0;
+transition: 0.5s ease;
+}
+.button-max button{
+background-image: linear-gradient(135deg, rgba(107, 107, 107,0.06) 0%, rgba(107, 107, 107,0.06) 50%,rgba(202, 202, 202,0.06) 50%, rgba(202, 202, 202,0.06) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)); background-size: 30px 30px;
+width: 130px;
+height: 35px;
+color: aliceblue;
+position: relative;
+top: 50px;
+left: -237px;
+border-radius:7px ;
+cursor: pointer;
+}
+.effe1{
+    width: 1400px;
+    height: 153px;
+    background: rgb(189, 0, 0);
+    z-index:3 ;
+    position: absolute;
+    border-radius: 20px 20px 0px 0px ;
+    top: 0;
+    transition: 0.9s ease;
+}
+.effe2{
+    width: 1400px;
+    height: 140px;
+    background: rgb(189, 0, 0);
+    z-index:3 ;
+    position: absolute;
+   transition: 0.9s ease;
+    top: 18%;
+}
+.effe3{
+    width: 1400px;
+    height: 140px;
+    background: rgb(189, 0, 0);
+    z-index:3 ;
+    position: absolute;
+   transition: 0.9s ease;
+    top: 34.5%;
+}
+.effe4{
+    width: 1400px;
+    height: 140px;
+    background: rgb(189, 0, 0);
+    z-index:3 ;
+    position: absolute;
+ transition: 0.9s ease;
+    top: 50.8%;
+}
+.effe5{
+    width: 1400px;
+    height: 140px;
+    background: rgb(189, 0, 0);
+    z-index:3 ;
+    position: absolute;
+    transition: 0.9s ease;
+    top: 67.2%;
+}
+.effe6{
+    width: 1400px;
+    height: 140px;
+    background: rgb(189, 0, 0);
+    z-index:3 ;
+    position: absolute;
+    border-radius: 0px 0px 20px 20px ;
+    top: 83.7%;
+    transition: 0.9s ease;
+}
+.mera1{
+   transform: translateX(-2000px);
+   
+}
+.mera2{
+   transform: translateX(2000px);
+   
+}
+.mera3{
+   transform: translateX(-2000px);
+   
+}
+.mera4{
+   transform: translateX(2000px);
+   
+}
+.mera5{
+   transform: translateX(-2000px);
+   
+}
+.mera6{
+   transform: translateX(2000px);
+   
+}
+
+
+.imagine{
+  opacity: 1;
+ scale:1;
+}
+.timatique{
+  opacity: 1;
+
+}
+.passat{
+  opacity: 1;
+}
+
+
+ .pixe{
+  transform: translateY(0);
+}  */

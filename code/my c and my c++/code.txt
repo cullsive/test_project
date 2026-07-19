@@ -1,0 +1,153 @@
+int x = 0;
+int y = 0;
+
+printf("entre le premier nombre : "); 
+scanf("%d",&x);
+printf("\nentre le deuxieme nombre : "); 
+scanf("%d",&y);
+char *me = ( x > y) ? "est superieur a :" : "est pas superieur a :"; 
+
+printf("\n%d %s %d\n",x,me,y);
+
+formule//////////////////////////////////////////////////////////////////////
+
+
+void colorPrint(char *texte, char *couleur) {
+    if (strcmp(couleur, "rouge") == 0) {
+        printf("\033[0;31m%s\033[0m\n", texte);
+    } else if (strcmp(couleur, "vert") == 0) {
+        printf("\033[0;32m%s\033[0m\n", texte);
+    } else if (strcmp(couleur, "jaune") == 0) {
+        printf("\033[0;33m%s\033[0m\n", texte);
+    } else if (strcmp(couleur, "bleu") == 0) {
+        printf("\033[0;34m%s\033[0m\n", texte);
+    } else {
+        // Couleur inconnue → texte normal
+        printf("%s\n", texte);
+    }
+}
+
+color//////////////////////////////////////////////////////////////////////////////
+char* getColorCode(char* couleur) {
+    if (strcmp(couleur, "rouge") == 0) return "\033[0;31m";
+    if (strcmp(couleur, "vert") == 0) return "\033[0;32m";
+    if (strcmp(couleur, "jaune") == 0) return "\033[0;33m";
+    if (strcmp(couleur, "bleu") == 0) return "\033[0;34m";
+    return "\033[0m"; // couleur par défaut (normal)
+}
+
+void printColor(char* texte, char* couleur) {
+    printf("%s%s\033[0m\n", getColorCode(couleur), texte);
+}
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+tableau de prograssion 
+
+
+
+//   int i;
+//     char bar[11]; // 10 caractères + '\0'
+
+//     for (i = 0; i <= 100; i += 10) {
+//         int progress_units = i / 10;
+//         for (int j = 0; j < 10; j++) {
+//             bar[j] = (j < progress_units) ? '*' : '_';
+//         }
+//         bar[10] = '\0'; // terminaison de la chaîne
+
+//         printf("\r\033[1;32mProgression %-10s %3d%%\033[0m", bar, i);
+//         fflush(stdout);
+//         sleep(1); // ralentit pour effet visuel
+//     }
+-------------------------------------------------------------------------------------------------
+version 2
+
+
+// for (int i = 0; i <= 100; i += 10) {
+//     printf("\r\033[1;32mProgression %-10s %d%%\033[0m", "___________" + (10 - i/10), i);
+//     fflush(stdout);
+//     sleep(2);
+// }
+
+
+--------------------------------------------------------------------------------------------------
+version 3
+
+void progress_with_delay(int milliseconds_step) {
+    const char *bar = "__________";
+printf("\n");
+    for (int i = 0; i <= 100; i += 10) {
+        struct timespec ts;
+        ts.tv_sec = milliseconds_step / 1000;
+        ts.tv_nsec = (milliseconds_step % 1000) * 1000000;
+        nanosleep(&ts, NULL);
+
+        printf("\r\033[1;32mProgression %-10.*s %d%%\033[0m", i / 10, bar,i);
+        fflush(stdout);
+    }
+    printf("\n");
+}
+
+
+-------plus-----------------------------------------------------------------------
+
+ int milliseconds_step = 500;
+    progress_with_delay(milliseconds_step);
+
+------------------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+temps
+
+void sleep_ms(int milliseconds) {
+    struct timespec ts;
+    ts.tv_sec = milliseconds / 1000;
+    ts.tv_nsec = (milliseconds % 1000) * 1000000;
+    nanosleep(&ts, NULL);
+}
+
+affiche//////////////////////////////////////////////////////////////////////////////////
+
+sleep_ms(500); 
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+pas touche --------------------------------------------------------------------------
+
+void you(char *myname, int mysizeof, const char *myprompt, int minLength) {
+    do {
+        printf("%s", myprompt);
+        fgets(myname,mysizeof, stdin);
+        myname[strcspn(myname, "\n")] = '\0';
+
+        if (strlen(myname) >= minLength) {
+        printf("\n\033[0;32mvalider!\n\033[0m");
+      break; 
+        }
+        else{
+               printf("\n\033[0;31mnon valider! %d lettre minimum \033[0m\n ", minLength);
+        }
+    } while (1);
+}
+
+------------------------------------------------------------
+you (name, sizeof(name),"\nentre votre nom : " ,3); 
+------------------------------------------------------------
+
+pas touche------------------------------------------------------------------------------------
+
+
