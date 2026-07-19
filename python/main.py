@@ -1,1 +1,1 @@
-print("hello cullsive vh,v, non tu marrete sa cullsive et de ; en python merci")
+print("tu a oublie un pas la ligne 1")
