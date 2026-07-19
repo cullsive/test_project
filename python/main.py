@@ -1,1 +1,1 @@
-print("hello cullsive vh,v, sa va cullsive tu va bien "); 
+print("hello cullsive vh,v, non tu marrete sa cullsive et de ; en python merci")
